@@ -1,3 +1,7 @@
+#
+#    VIF
+#
+
 import numpy as np
 import pandas as pd
 import japanize_matplotlib
@@ -5,8 +9,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 def vif(df):
-    inverted_corr = np.linalg.inv(df.corr().values) # 相関行列の逆行列
-    vif = np.diag(inverted_corr) # 対角成分を取得
+    inverted_corr = np.linalg.inv(df.corr().values
+    vif = np.diag(inverted_corr)
     return pd.DataFrame(vif, index=df.columns, columns=["VIF"])
 
 # データ読み込み

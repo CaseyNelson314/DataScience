@@ -1,3 +1,7 @@
+#
+#    重回帰分析
+#
+
 import pandas as pd
 import japanize_matplotlib
 from sklearn.preprocessing import MinMaxScaler
